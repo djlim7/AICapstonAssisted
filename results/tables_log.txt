@@ -1,0 +1,1002 @@
+Loading existing results from results/run_20260531_011922.json
+
+========================================================================================================================================================
+SCORING PERFORMANCE  (mean ± SD across runs, matching paper Table 1)
+========================================================================================================================================================
+                          ─── High ───                                    ─── Low ───                                     ─── All ───                   
+Config               MAE            RMSE             RMC             MAE            RMSE             RMC             MAE            RMSE             RMC
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+C-SF           1.87±0.02       2.24±0.02       0.94±0.01       2.47±0.02       2.85±0.01       0.84±0.02       2.17±0.01       2.56±0.01       0.94±0.00
+C-FF           1.76±0.04       2.14±0.04       0.83±0.01       2.45±0.04       2.84±0.03       0.81±0.02       2.11±0.03       2.52±0.02       0.91±0.00
+D-SF           1.91±0.01       2.28±0.01       0.99±0.00       2.33±0.02       2.75±0.02       0.77±0.02       2.12±0.01       2.53±0.01       0.94±0.00
+D-FF           2.32±0.02       2.67±0.01       0.90±0.03       2.30±0.04       2.73±0.03       0.73±0.02       2.31±0.01       2.70±0.01       0.91±0.01
+========================================================================================================================================================
+
+==========================================================================================
+TABLE 2 — Pairwise RMSE permutation tests  (row − col, 95% BCa CI)  [paper values in brackets]
+==========================================================================================
+
+  Group: High
+    Row    Col    Our diff                  Our CI     Our p  |   Paper diff              Paper CI    Sig
+  -----  -----  ----------  ----------------------  --------  |  -----------  --------------------  -----
+   C-SF   C-FF      +0.538  [+0.358,+0.776]     0.000***  |  +0.110  [+0.060,+0.170]  ***
+   C-SF   D-SF      -0.216  [-0.357,-0.121]     0.000***  |  +0.230  [+0.140,+0.330]  ***
+   C-SF   D-FF      -2.116  [-2.421,-1.827]     0.000***  |  +0.040  [-0.070,+0.160]  
+   C-FF   D-SF      -0.754  [-1.024,-0.547]     0.000***  |  +0.120  [+0.050,+0.200]  **
+   C-FF   D-FF      -2.654  [-3.086,-2.271]     0.000***  |  -0.070  [-0.190,+0.040]  
+   D-SF   D-FF      -1.900  [-2.138,-1.653]     0.000***  |  -0.190  [-0.310,-0.100]  ***
+
+  Group: Low
+    Row    Col    Our diff                  Our CI     Our p  |   Paper diff              Paper CI    Sig
+  -----  -----  ----------  ----------------------  --------  |  -----------  --------------------  -----
+   C-SF   C-FF      +0.062  [-0.122,+0.237]     0.504  |  -0.040  [-0.110,+0.040]  
+   C-SF   D-SF      +0.608  [+0.410,+0.889]     0.000***  |  -0.130  [-0.230,-0.070]  ***
+   C-SF   D-FF      +0.719  [+0.358,+1.074]     0.000***  |  -0.100  [-0.210,-0.030]  *
+   C-FF   D-SF      +0.546  [+0.294,+0.865]     0.000***  |  -0.100  [-0.190,-0.020]  *
+   C-FF   D-FF      +0.657  [+0.307,+0.999]     0.000***  |  -0.060  [-0.150,+0.000]  
+   D-SF   D-FF      +0.111  [-0.243,+0.401]     0.508  |  +0.030  [-0.030,+0.120]  
+
+  Group: All
+    Row    Col    Our diff                  Our CI     Our p  |   Paper diff              Paper CI    Sig
+  -----  -----  ----------  ----------------------  --------  |  -----------  --------------------  -----
+   C-SF   C-FF      +0.300  [+0.166,+0.446]     0.000***  |  +0.030  [-0.020,+0.080]  
+   C-SF   D-SF      +0.196  [+0.072,+0.354]     0.006**  |  +0.030  [-0.040,+0.090]  
+   C-SF   D-FF      -0.698  [-1.000,-0.400]     0.000***  |  -0.040  [-0.110,+0.030]  
+   C-FF   D-SF      -0.104  [-0.303,+0.096]     0.321  |  -0.002  [-0.070,+0.060]  
+   C-FF   D-FF      -0.999  [-1.352,-0.657]     0.000***  |  -0.070  [-0.140,-0.010]  *
+   D-SF   D-FF      -0.894  [-1.138,-0.656]     0.000***  |  -0.070  [-0.130,+0.000]  
+==========================================================================================
+
+==========================================================================================
+TABLE 3 — Pairwise MAE permutation tests  (row − col, 95% BCa CI)  [paper values in brackets]
+==========================================================================================
+
+  Group: High
+    Row    Col    Our diff                  Our CI     Our p  |   Paper diff              Paper CI    Sig
+  -----  -----  ----------  ----------------------  --------  |  -----------  --------------------  -----
+   C-SF   C-FF      +0.116  [+0.067,+0.168]     0.000***  |  +0.090  [+0.050,+0.150]  ***
+   C-SF   D-SF      -0.049  [-0.084,-0.024]     0.001**  |  +0.180  [+0.110,+0.280]  ***
+   C-SF   D-FF      -0.450  [-0.504,-0.395]     0.000***  |  +0.010  [-0.080,+0.100]  
+   C-FF   D-SF      -0.164  [-0.222,-0.108]     0.000***  |  +0.090  [+0.030,+0.170]  *
+   C-FF   D-FF      -0.566  [-0.638,-0.484]     0.000***  |  -0.080  [-0.180,+0.010]  
+   D-SF   D-FF      -0.402  [-0.433,-0.355]     0.000***  |  -0.170  [-0.270,-0.090]  ***
+
+  Group: Low
+    Row    Col    Our diff                  Our CI     Our p  |   Paper diff              Paper CI    Sig
+  -----  -----  ----------  ----------------------  --------  |  -----------  --------------------  -----
+   C-SF   C-FF      +0.013  [-0.028,+0.052]     0.582  |  -0.070  [-0.140,+0.020]  
+   C-SF   D-SF      +0.144  [+0.099,+0.198]     0.000***  |  -0.170  [-0.260,-0.080]  ***
+   C-SF   D-FF      +0.175  [+0.116,+0.235]     0.000***  |  -0.100  [-0.200,-0.030]  *
+   C-FF   D-SF      +0.131  [+0.079,+0.191]     0.000***  |  -0.100  [-0.190,-0.010]  *
+   C-FF   D-FF      +0.162  [+0.106,+0.220]     0.000***  |  -0.030  [-0.130,+0.050]  
+   D-SF   D-FF      +0.031  [-0.022,+0.083]     0.244  |  +0.070  [-0.010,+0.150]  
+
+  Group: All
+    Row    Col    Our diff                  Our CI     Our p  |   Paper diff              Paper CI    Sig
+  -----  -----  ----------  ----------------------  --------  |  -----------  --------------------  -----
+   C-SF   C-FF      +0.064  [+0.032,+0.097]     0.000***  |  +0.010  [-0.040,+0.060]  
+   C-SF   D-SF      +0.048  [+0.018,+0.079]     0.004**  |  +0.010  [-0.060,+0.080]  
+   C-SF   D-FF      -0.138  [-0.196,-0.079]     0.000***  |  -0.050  [-0.110,+0.020]  
+   C-FF   D-SF      -0.017  [-0.061,+0.027]     0.448  |  -0.002  [-0.060,+0.060]  
+   C-FF   D-FF      -0.202  [-0.271,-0.134]     0.000***  |  -0.060  [-0.120,+0.010]  
+   D-SF   D-FF      -0.186  [-0.228,-0.140]     0.000***  |  -0.050  [-0.120,+0.000]  
+==========================================================================================
+
+========================================================================
+SHAPIRO-WILK NORMALITY TEST  (justifies permutation over t-test)
+========================================================================
+Config    Error type                 W           p  Normal?
+------------------------------------------------------------------------
+C-SF      absolute (MAE)        0.9501      0.0000  NO  (p<.05)
+C-SF      squared (RMSE)        0.7095      0.0000  NO  (p<.05)
+C-FF      absolute (MAE)        0.9400      0.0000  NO  (p<.05)
+C-FF      squared (RMSE)        0.6889      0.0000  NO  (p<.05)
+D-SF      absolute (MAE)        0.9485      0.0000  NO  (p<.05)
+D-SF      squared (RMSE)        0.7082      0.0000  NO  (p<.05)
+D-FF      absolute (MAE)        0.9592      0.0000  NO  (p<.05)
+D-FF      squared (RMSE)        0.7475      0.0000  NO  (p<.05)
+========================================================================
+
+============================================================
+SPEARMAN CORRELATION — text length vs. score  (§5.1)
+============================================================
+Source           rho           p  Sig?
+------------------------------------------------------------
+human        -0.1784      0.0089  **
+C-SF         -0.1568      0.0217  *
+C-FF         -0.1978      0.0037  **
+D-SF         -0.1385      0.0430  *
+D-FF         -0.0809      0.2384  
+============================================================
+
+============================================================================
+LENGTH-CONTROLLED MAE  (same-score pairs, longer vs shorter)  (§5.1)
+============================================================================
+Config      MAE longer   MAE shorter   n_long   n_short           p  Sig?
+----------------------------------------------------------------------------
+C-SF            2.1838        2.1351      117        97      0.0042  **
+C-FF            2.1239        2.0649      117        97      0.0026  **
+D-SF            2.1444        2.0773      117        97      0.0071  **
+D-FF            2.3667        2.2186      117        97      0.0046  **
+============================================================================
+
+Evaluating feedback quality (214 instances × 4 configs, workers=8)...
+
+Evaluating feedback for config C-SF (214 instances)...
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+
+Evaluating feedback for config C-FF (214 instances)...
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+
+Evaluating feedback for config D-SF (214 instances)...
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+
+Evaluating feedback for config D-FF (214 instances)...
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+  done 1/214
+
+===============================================================================================================
+FIGURE 3 — LCF COMPONENT PROPORTIONS  (% of proposals, ours vs. paper)
+===============================================================================================================
+Component                               C-SF     C-FF     D-SF     D-FF  |    paper    paper    paper    paper
+                                        ours     ours     ours     ours  |    paper    paper    paper    paper
+---------------------------------------------------------------------------------------------------------------
+Learning Outcomes (FI)                  92.5     92.5     99.5    100.0  |      0.0      0.0      0.0      0.0
+Future Improvement (FI)                100.0    100.0    100.0    100.0  |    100.0    100.0    100.0    100.0
+Performance Summary (SM)                60.7     62.6     95.8    100.0  |     37.9     36.9     37.9     39.3
+Strengths & Weaknesses (SM)            100.0    100.0    100.0    100.0  |    100.0    100.0    100.0    100.0
+Active Role (AG)                       100.0    100.0    100.0    100.0  |      9.3     24.8     11.2     32.7
+Affirm & Encourage (AG)                100.0     99.5    100.0     99.5  |      0.5      0.0      0.0      0.0
+Strengthen Relationship (AG)            86.0     80.8    100.0     95.3  |     66.4     56.1     66.8     51.4
+===============================================================================================================
